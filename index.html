@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Finance Tracker</h1>
+    <!-- Input Form for Income and Expense -->
+    <div class="input-group">
+      <label for="income">Enter Your Income</label>
+      <input type="number" id="income" placeholder="Enter your income">
+    </div>
+
+    <div class="input-group">
+      <label for="expense">Enter Your Expense</label>
+      <input type="number" id="expense" placeholder="Enter your expense">
+    </div>
+
+    <div class="input-group">
+      <label for="category">Expense Category</label>
+      <input type="text" id="category" placeholder="Enter expense category" required>
+    </div>
+
+
+    <button class="button" id="addIncomeBtn" onclick="addIncome()">Add Income</button>
+    <button class="button" id="addExpenseBtn" onclick="addExpense()">Add Expense</button>
+
+
+    <div id="message" style="color: red;"></div>
+
+    <div class="totals">
+      <div class="box" id="totalIncome">
+        <h3>Total Income</h3>
+        <span>$0</span>
+      </div>
+      <div class="box" id="totalExpense">
+        <h3>Total Expense</h3>
+        <span>$0</span>
+      </div>
+      <div class="box" id="totalSavings">
+        <h3>Total Saving</h3>
+        <span>$0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
